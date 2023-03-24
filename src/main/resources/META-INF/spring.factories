@@ -1,2 +1,3 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  com.haohao.minio.TestAutoConfiguration
+com.haohao.minio.TestAutoConfiguration,\
+com.haohao.minio.MinioAutoConfiguration

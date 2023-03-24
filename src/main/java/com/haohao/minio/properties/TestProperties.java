@@ -1,4 +1,4 @@
-package com.haohao.minio;
+package com.haohao.minio.properties;
 
 
 import lombok.Getter;
