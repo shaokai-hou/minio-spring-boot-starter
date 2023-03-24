@@ -1,0 +1,1 @@
+# minio-starter组件
