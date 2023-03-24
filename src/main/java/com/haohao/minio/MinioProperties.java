@@ -1,4 +1,4 @@
-package com.haohao.minio.properties;
+package com.haohao.minio;
 
 
 import lombok.Getter;
@@ -10,8 +10,8 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 @ConfigurationProperties(prefix = "minio")
 public class MinioProperties {
 
-    private String endpoint = "1";
-    private String access ="1";
-    private String secret="1";
-    private String host="1";
+    private String host = "http://localhost:9000";
+    private String access = "admin";
+    private String secret = "admin123";
+    private String bucket = "src/main/test";
 }

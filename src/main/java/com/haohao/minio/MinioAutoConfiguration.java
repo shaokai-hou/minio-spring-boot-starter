@@ -1,6 +1,5 @@
 package com.haohao.minio;
 
-import com.haohao.minio.properties.MinioProperties;
 import io.minio.MinioClient;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
@@ -27,7 +26,7 @@ public class MinioAutoConfiguration {
     @Bean
     public MinioClient minioClient() {
         return MinioClient.builder()
-                .endpoint(minioProperties.getEndpoint())
+                .endpoint(minioProperties.getHost())
                 .credentials(minioProperties.getAccess(), minioProperties.getSecret())
                 .build();
     }
